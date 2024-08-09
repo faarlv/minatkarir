@@ -122,7 +122,7 @@ export default function CustomTable() {
     return (
       <Radio.Group>
         {options.map((option, index) => (
-          <Radio key={index} value={option}>
+          <Radio key={index} value={option} disabled={true}>
             {option}
           </Radio>
         ))}
@@ -147,12 +147,19 @@ export default function CustomTable() {
   };
 
   const columns = [
-    { title: "Halaman", dataIndex: "page", key: "page", align: "center" },
+    {
+      title: "Halaman",
+      dataIndex: "page",
+      key: "page",
+      align: "center",
+      width: 50,
+    },
     {
       title: "Soal",
       dataIndex: "soal_pertanyaan",
       key: "_id",
       align: "center",
+      width: 500,
     },
     {
       title: "pilihan Jawaban",
@@ -166,12 +173,14 @@ export default function CustomTable() {
       dataIndex: "tipe_soal",
       key: "_id",
       align: "center",
+      width: 150,
     },
     {
       title: "Waktu (Detik)",
       dataIndex: "waktu",
       key: "_id",
       align: "center",
+      width: 70,
     },
     {
       title: "Action",
