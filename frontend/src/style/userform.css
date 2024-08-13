@@ -2,25 +2,30 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   overflow: hidden;
 }
+
 .container-form {
-  overflow: hidden;
   margin: 50px;
   text-align: center;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   height: 80vh;
-  width: 100vw;
+  width: 90vw;
   background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+  padding: 20px;
 }
+
 .form {
   display: flex;
   align-items: center;
@@ -28,4 +33,37 @@ body {
   padding: 30px;
   border-radius: 10px;
   height: 200px;
+}
+
+.container-hasil {
+  border: 2px solid slateblue;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  overflow-y: auto;
+}
+
+.container-interpretasi {
+  max-width: max-content;
+  width: 500px;
+  word-wrap: break-word;
+  text-align: justify;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.container-interpretasi h4 {
+  margin-bottom: 10px;
+}
+
+.container-interpretasi p {
+  font-size: 14px;
+  line-height: 1.8;
 }
